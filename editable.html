@@ -2,627 +2,193 @@
 <html>
 
 <head>
+    <title>Perso 1 page template</title>
     <meta charset="UTF-8">
     <meta name="generator" content="Silex v2.2.7">
     <!-- leave this for stats -->
-    <script type="text/javascript" src="//preprod.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
-    <script type="text/javascript" src="//preprod.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
+    <style>
+        img[src="assets/piwik-app.png"] {
+            display: none !important;
+        }
+    </style>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
 
-    <script type="text/javascript" src="//preprod.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
-    <script type="text/javascript" src="//preprod.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
     <!-- Normalize -->
-    <link href="//preprod.silex.me/static/2.7/normalize.css" rel="stylesheet" data-silex-static="">
+    <link href="//editor.silex.me/static/2.7/normalize.css" rel="stylesheet" data-silex-static="">
     <!-- Silex style -->
-    <link href="//preprod.silex.me/static/2.7/front-end.css" rel="stylesheet" data-silex-static="">
+    <link href="//editor.silex.me/static/2.7/front-end.css" rel="stylesheet" data-silex-static="">
 
     <style type="text/css" class="silex-style">
-        @import url('//fonts.googleapis.com/css?family=Lobster');
-        @import url('http://fonts.googleapis.com/css?family=Cabin');
+        @import url('//fonts.googleapis.com/css?family=Josefin+Slab');
+        @import url('//fonts.googleapis.com/css?family=Oxygen:300');
         .normal {
-            font-family: 'Cabin', Helvetica, Arial, sans-serif;
-            font-size: 15px;
-        }
-        
-        .title,
-        .heading1,
-        .heading2,
-        .heading3 {
-            color: #3D362D;
-            font-family: 'Lobster', Georgia, Times, serif;
-            padding-left: 4px;
+            font-size: 12px;
+            font-family: 'Oxygen', sans-serif;
         }
         
         .title {
-            font-size: 100px;
-            line-height: 100px;
-            text-shadow: 0 0 5px #fefffd, 0 0 5px #fefffd, 0 0 5px #fefffd, 0 0 5px #fefffd, 0 0 10px #fefffd, 0 0 10px #fefffd, 0 0 10px #fefffd;
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: normal;
+            font-family: 'Josefin Slab', serif;
         }
         
-        .paragraph .silex-element-content {
-            line-height: 25px;
+        .heading1 {
+            font-size: 16px;
+            line-height: 0px;
+            font-weight: normal;
+            font-family: 'Josefin Slab', serif;
         }
         
-        .nav-element .normal {
-            font-family: 'noticia text', serif;
-            font-size: 12px;
-            font-weight: bold;
-            line-height: 33px;
+        .heading2 {
+            font-size: 40px;
+            line-height: 0px;
+            font-weight: normal;
         }
         
-        .nav-element.page-link-active {
-            background-color: #3D362D;
-            color: #fefffd;
+        .heading3 {
+            font-size: 16px;
+            line-height: 0px;
+            font-weight: normal;
         }
+        /* anim widget for firefox */
         
-        .nav-element.page-link-active:hover {
-            color: #fefffd;
-            text-decoration: none;
+        .paged-element-hidden.animated {
+            animation-name: none !important;
+        }
+        /* */
+        /* remove the space at the top of the site in mobile version */
+        
+        body {
+            padding: 0 !important;
         }
     </style>
     <script type="text/javascript" class="silex-script"></script>
+    <meta name="publicationPath" content="/api/1.0/github/exec/put/silex-templates/wip/perso1">
     <style class="silex-inline-styles" type="text/css">
-        .body-initial {
-            background-color: rgb(159, 141, 103);
-            background-image: url('../../../../../../../libs/templates/silex-templates/food-and-drink/assets/wood.jpg');
-            background-position-x: 50%;
-            background-position-y: 50%;
-            background-size: cover;
-        }
-        
-        .silex-id-1484949224320-1 {
-            min-height: 100px;
+        .silex-id-1439572548860-10 {
+            cursor: auto;
+            left: 0px;
             top: 0px;
-            left: 0px;
-            background-color: transparent;
-        }
-        
-        .silex-id-1484949224320-0 {
-            min-height: 235px;
-            background-color: transparent;
-        }
-        
-        .silex-id-1424647173853 {
-            background-color: transparent;
-            border-top-color: rgb(0, 0, 0);
-            border-right-color: rgb(0, 0, 0);
-            border-bottom-color: rgb(0, 0, 0);
-            border-left-color: rgb(0, 0, 0);
-            left: 150px;
-            top: 13px;
-            width: 700px;
-            min-height: 110px;
-        }
-        
-        .silex-id-1424647165395 {
-            border-bottom-color: rgb(0, 0, 0);
-            border-left-color: rgb(0, 0, 0);
-            border-right-color: rgb(0, 0, 0);
-            border-top-color: rgb(0, 0, 0);
-            left: 292px;
-            top: 119px;
-            width: 389px;
-            min-height: 47px;
-        }
-        
-        .silex-id-1424710230648 {
-            background-color: rgb(254, 255, 253);
-            border-top-color: rgb(0, 0, 0);
-            border-right-color: rgb(0, 0, 0);
-            border-bottom-color: rgb(0, 0, 0);
-            border-left-color: rgb(0, 0, 0);
-            left: 0px;
-            top: 174px;
-            width: 960px;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 0px;
-            border-bottom-left-radius: 0px;
-            min-height: 30px;
-        }
-        
-        .silex-id-1424710433398 {
             background-color: rgb(255, 255, 255);
-            left: 239px;
-            top: 0px;
-            width: 121px;
-            min-height: 30px;
         }
         
-        .silex-id-1424710332527 {
-            left: 8px;
-            top: 0px;
-            width: 106px;
-            min-height: 30px;
-        }
-        
-        .silex-id-1426536866650 {
+        .silex-id-1439572548754-9 {
+            top: 5px;
+            left: 163px;
+            width: 1100px;
+            box-sizing: content-box;
             background-color: transparent;
-            left: 365px;
-            top: 0px;
-            width: 121px;
-            min-height: 30px;
+            min-height: 677px;
         }
         
-        .silex-id-1434425184890-0 {
-            left: 8px;
-            top: 0px;
-            width: 106px;
-            min-height: 30px;
+        .silex-id-1439572548653-8 {
+            width: 235px;
+            top: 80px;
+            left: 558px;
+            box-sizing: content-box;
+            min-height: 24px;
         }
         
-        .silex-id-1434634286306-0 {
-            background-color: transparent;
-            left: 492px;
-            top: 0px;
-            width: 121px;
-            min-height: 30px;
-        }
-        
-        .silex-id-1434634286307-1 {
-            left: 8px;
-            top: 0px;
-            width: 106px;
-            min-height: 30px;
-        }
-        
-        .silex-id-1434634331833-2 {
-            background-color: transparent;
-            left: 619px;
-            top: 0px;
-            width: 121px;
-            min-height: 30px;
-        }
-        
-        .silex-id-1434634331834-3 {
-            left: 8px;
-            top: 0px;
-            width: 106px;
-            min-height: 30px;
-        }
-        
-        .silex-id-1484949486466-5 {
-            min-height: 100px;
-            top: 1354px;
+        .silex-id-1439572548552-7 {
+            width: 796px;
+            top: 100px;
             left: 0px;
-            background-color: transparent;
-        }
-        
-        .silex-id-1484949486465-4 {
-            min-height: 798px;
-            background-color: transparent;
-        }
-        
-        .silex-id-1424920356950 {
-            background-color: rgb(254, 255, 253);
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-top-width: 10px;
-            border-right-width: 10px;
-            border-bottom-width: 10px;
-            border-left-width: 10px;
-            left: 644px;
-            top: 33px;
-            width: 295px;
-            border-top-color: rgb(254, 255, 253);
-            border-right-color: rgb(254, 255, 253);
-            border-bottom-color: rgb(254, 255, 253);
-            border-left-color: rgb(254, 255, 253);
-            min-height: 477px;
+            box-sizing: content-box;
+            background-image: url('silexlabs-logo.png');
+            background-color: rgb(0, 0, 0);
+            background-size: auto;
+            background-position-x: 100%;
+            background-position-y: 100%;
+            background-repeat-x: no-repeat;
+            background-repeat-y: no-repeat;
+            min-height: 500px;
         }
         
         @media only screen and (max-width: 480px),
         only screen and (max-device-width: 480px) {
-            .silex-id-1424920356950 {
-                width: 450px;
-                min-height: 338px;
-            }
-        }
-        
-        .silex-id-1425063529504 {
-            background-color: rgb(254, 255, 253);
-            background-image: url('../../../../../../../libs/templates/silex-templates/food-and-drink/assets/cafe2.jpg');
-            background-size: cover;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-top-width: 10px;
-            border-right-width: 10px;
-            border-bottom-width: 10px;
-            border-left-width: 10px;
-            left: 323px;
-            top: 33px;
-            width: 295px;
-            border-top-color: rgb(254, 255, 253);
-            border-right-color: rgb(254, 255, 253);
-            border-bottom-color: rgb(254, 255, 253);
-            border-left-color: rgb(254, 255, 253);
-            min-height: 225px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1425063529504 {
-                width: 450px;
-                background-image: url('../../../../../../../libs/templates/silex-templates/food-and-drink/assets/cafe2.jpg');
-            }
-        }
-        
-        .silex-id-1424921460631 {
-            left: 0px;
-            top: 539px;
-            width: 188px;
-            background-color: rgb(254, 255, 253);
-            border-top-width: 10px;
-            border-right-width: 10px;
-            border-bottom-width: 10px;
-            border-left-width: 10px;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-top-color: rgb(254, 255, 253);
-            border-right-color: rgb(254, 255, 253);
-            border-bottom-color: rgb(254, 255, 253);
-            border-left-color: rgb(254, 255, 253);
-            min-height: 190px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1424921460631 {
-                min-height: 100px;
-                width: 450px;
-            }
-        }
-        
-        .silex-id-1434426151026-1 {
-            width: 740px;
-            top: 539px;
-            left: 198px;
-            background-color: rgb(254, 255, 253);
-            border-top-width: 10px;
-            border-right-width: 10px;
-            border-bottom-width: 10px;
-            border-left-width: 10px;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-top-color: rgb(254, 255, 253);
-            border-right-color: rgb(254, 255, 253);
-            border-bottom-color: rgb(254, 255, 253);
-            border-left-color: rgb(254, 255, 253);
-            min-height: 190px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1434426151026-1 {
-                width: 450px;
-            }
-        }
-        
-        .silex-id-1425063611139 {
-            background-color: rgb(254, 255, 253);
-            background-image: url('../../../../../../../libs/templates/silex-templates/food-and-drink/assets/cafe.jpg');
-            background-size: cover;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-top-width: 10px;
-            border-right-width: 10px;
-            border-bottom-width: 10px;
-            border-left-width: 10px;
-            left: 322px;
-            top: 285px;
-            width: 295px;
-            border-top-color: rgb(254, 255, 253);
-            border-right-color: rgb(254, 255, 253);
-            border-bottom-color: rgb(254, 255, 253);
-            border-left-color: rgb(254, 255, 253);
-            min-height: 225px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1425063611139 {
-                width: 450px;
-                background-image: url('../../../../../../../libs/templates/silex-templates/food-and-drink/assets/cafe.jpg');
-            }
-        }
-        
-        .silex-id-1425063401661 {
-            background-color: rgb(254, 255, 253);
-            background-image: url('../../../../../../../libs/templates/silex-templates/food-and-drink/assets/people.jpeg');
-            background-size: cover;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-top-width: 10px;
-            border-right-width: 10px;
-            border-bottom-width: 10px;
-            border-left-width: 10px;
-            left: 0px;
-            top: 33px;
-            width: 295px;
-            border-top-color: rgb(254, 255, 253);
-            border-right-color: rgb(254, 255, 253);
-            border-bottom-color: rgb(254, 255, 253);
-            border-left-color: rgb(254, 255, 253);
-            background-position-x: 50%;
-            background-position-y: 50%;
-            min-height: 477px;
-        }
-        
-        .silex-id-1484949640479-7 {
-            min-height: 100px;
-            top: 235px;
-            left: 0px;
-            background-color: transparent;
-        }
-        
-        .silex-id-1484949640479-6 {
-            min-height: 813px;
-            background-color: transparent;
-        }
-        
-        .silex-id-1434426485636-2 {
-            left: 1px;
-            top: 23px;
-            width: 188px;
-            background-color: rgb(254, 255, 253);
-            border-top-width: 10px;
-            border-right-width: 10px;
-            border-bottom-width: 10px;
-            border-left-width: 10px;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-top-color: rgb(254, 255, 253);
-            border-right-color: rgb(254, 255, 253);
-            border-bottom-color: rgb(254, 255, 253);
-            border-left-color: rgb(254, 255, 253);
-            min-height: 190px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1434426485636-2 {
-                width: 450px;
-                min-height: 170px;
-            }
-        }
-        
-        .silex-id-1434426485665-3 {
-            width: 740px;
-            top: 23px;
-            left: 199px;
-            background-color: rgb(254, 255, 253);
-            border-top-width: 10px;
-            border-right-width: 10px;
-            border-bottom-width: 10px;
-            border-left-width: 10px;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-top-color: rgb(254, 255, 253);
-            border-right-color: rgb(254, 255, 253);
-            border-bottom-color: rgb(254, 255, 253);
-            border-left-color: rgb(254, 255, 253);
-            min-height: 190px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1434426485665-3 {
-                width: 707px;
-            }
-        }
-        
-        .silex-id-1434426787582-9 {
-            width: 937px;
-            top: 256px;
-            left: 3px;
-            background-color: rgb(254, 255, 253);
-            border-top-width: 10px;
-            border-right-width: 10px;
-            border-bottom-width: 10px;
-            border-left-width: 10px;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            background-image: url('../../../../../../../libs/templates/silex-templates/food-and-drink/assets/people.jpeg');
-            background-size: cover;
-            border-top-color: rgb(254, 255, 253);
-            border-right-color: rgb(254, 255, 253);
-            border-bottom-color: rgb(254, 255, 253);
-            border-left-color: rgb(254, 255, 253);
-            background-position-x: 50%;
-            background-position-y: 50%;
-            min-height: 244px;
-        }
-        
-        .silex-id-1434426613625-5 {
-            left: 751px;
-            top: 541px;
-            width: 188px;
-            background-color: rgb(254, 255, 253);
-            border-top-width: 10px;
-            border-right-width: 10px;
-            border-bottom-width: 10px;
-            border-left-width: 10px;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-top-color: rgb(254, 255, 253);
-            border-right-color: rgb(254, 255, 253);
-            border-bottom-color: rgb(254, 255, 253);
-            border-left-color: rgb(254, 255, 253);
-            min-height: 190px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1434426613625-5 {
-                width: 450px;
-            }
-        }
-        
-        .silex-id-1434426613658-6 {
-            width: 740px;
-            top: 541px;
-            left: 2px;
-            background-color: rgb(254, 255, 253);
-            border-top-width: 10px;
-            border-right-width: 10px;
-            border-bottom-width: 10px;
-            border-left-width: 10px;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-top-color: rgb(254, 255, 253);
-            border-right-color: rgb(254, 255, 253);
-            border-bottom-color: rgb(254, 255, 253);
-            border-left-color: rgb(254, 255, 253);
-            min-height: 190px;
-        }
-        
-        .silex-id-1484949717487-9 {
-            min-height: 100px;
-            top: 1354px;
-            left: 0px;
-        }
-        
-        .silex-id-1484949717486-8 {
-            min-height: 345px;
-            background-color: transparent;
-        }
-        
-        .silex-id-1471343044963-3 {
-            width: 959px;
-            top: 35px;
-            left: -10px;
-            background-color: rgb(254, 255, 253);
-            border-top-width: 10px;
-            border-right-width: 10px;
-            border-bottom-width: 10px;
-            border-left-width: 10px;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-top-color: rgb(254, 255, 253);
-            border-right-color: rgb(254, 255, 253);
-            border-bottom-color: rgb(254, 255, 253);
-            border-left-color: rgb(254, 255, 253);
-            min-height: 261px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1471343044963-3 {
-                min-height: 270px;
-                top: 28px;
-                left: 1px;
+            .silex-id-1439572548552-7 {
+                top: 0px;
+                left: 11px;
                 width: 423px;
+                min-height: 786px;
             }
         }
         
-        .silex-id-1484949434473-3 {
-            min-height: 100px;
-            top: 1354px;
+        .silex-id-1439572548242-4 {
+            width: 356px;
+            top: 54px;
+            left: 30px;
+            box-sizing: content-box;
+            min-height: 238px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1439572548242-4 {
+                top: 9px;
+                left: 62px;
+                width: 300px;
+                min-height: 651px;
+            }
+        }
+        
+        .silex-id-1439572548447-6 {
+            width: 268px;
+            top: 353px;
+            left: 18px;
+            box-sizing: content-box;
+            min-height: 58px;
+        }
+        
+        .silex-id-1439572548141-3 {
+            width: 188px;
+            top: 0px;
+            left: 30px;
+            box-sizing: content-box;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            background-color: rgb(255, 255, 255);
+            min-height: 25px;
+        }
+        
+        .silex-id-1439572548345-5 {
+            width: 205px;
+            top: 330px;
+            left: 30px;
+            box-sizing: content-box;
+            min-height: 37px;
+        }
+        
+        .silex-id-1439572548039-2 {
+            width: 800px;
+            top: 600px;
             left: 0px;
+            box-sizing: content-box;
+            min-height: 26px;
         }
         
-        .silex-id-1484949434473-2 {
-            min-height: 100px;
-            background-color: transparent;
+        .silex-id-1439572547830-0 {
+            width: 437px;
+            top: 56px;
+            left: 30px;
+            box-sizing: content-box;
+            min-height: 40px;
         }
         
-        .silex-id-1425063986632 {
-            left: 50px;
-            top: 44px;
-            width: 841px;
-            border-top-color: rgb(0, 0, 0);
-            border-right-color: rgb(0, 0, 0);
-            border-bottom-color: rgb(0, 0, 0);
-            border-left-color: rgb(0, 0, 0);
-            min-height: 20px;
+        .silex-id-1439572547935-1 {
+            width: 747px;
+            top: 614px;
+            left: 2px;
+            box-sizing: content-box;
+            min-height: 30px;
         }
     </style>
-
-
-
-
-
-
-
-
-
-
-    <title>Food and drink template</title>
-    <meta name="description" content="The description displayed in search results">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Check this site, friends!">
-    <meta name="og:title" content="Check this site, friends!">
-    <meta name="twitter:description" content="The description displayed in social networks">
-    <meta name="og:description" content="The description displayed in social networks">
-    <meta name="twitter:image" content="http://localhost:6805/api/1.0/www/exec/get//tmp/food-and-drink/assets/lunch.jpg">
-    <meta name="og:image" content="http://localhost:6805/api/1.0/www/exec/get//tmp/food-and-drink/assets/lunch.jpg">
-    <meta name="twitter:site" content="@silexlabs">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <meta content="/api/1.0/github/exec/put///test-silex007/gh-pages" name="publicationPath">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -630,7 +196,7 @@
 
 
     <script type="text/javascript" class="silex-json-styles">
-        [{"desktop":{"body-initial":{"background-color":"rgb(159, 141, 103)","background-image":"url('../../../../../../../libs/templates/silex-templates/food-and-drink/assets/wood.jpg')","background-position-x":"50%","background-position-y":"50%","background-size":"cover"},"silex-id-1424647173853":{"background-color":"transparent","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","left":"150px","top":"13px","width":"700px","min-height":"110px"},"silex-id-1424647165395":{"border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-top-color":"rgb(0, 0, 0)","left":"292px","top":"119px","width":"389px","min-height":"47px"},"silex-id-1424920356950":{"background-color":"rgb(254, 255, 253)","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-width":"10px","border-right-width":"10px","border-bottom-width":"10px","border-left-width":"10px","left":"644px","top":"33px","width":"295px","border-top-color":"rgb(254, 255, 253)","border-right-color":"rgb(254, 255, 253)","border-bottom-color":"rgb(254, 255, 253)","border-left-color":"rgb(254, 255, 253)","min-height":"477px"},"silex-id-1425063529504":{"background-color":"rgb(254, 255, 253)","background-image":"url('../../../../../../../libs/templates/silex-templates/food-and-drink/assets/cafe2.jpg')","background-size":"cover","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-width":"10px","border-right-width":"10px","border-bottom-width":"10px","border-left-width":"10px","left":"323px","top":"33px","width":"295px","border-top-color":"rgb(254, 255, 253)","border-right-color":"rgb(254, 255, 253)","border-bottom-color":"rgb(254, 255, 253)","border-left-color":"rgb(254, 255, 253)","min-height":"225px"},"silex-id-1425063611139":{"background-color":"rgb(254, 255, 253)","background-image":"url('../../../../../../../libs/templates/silex-templates/food-and-drink/assets/cafe.jpg')","background-size":"cover","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-width":"10px","border-right-width":"10px","border-bottom-width":"10px","border-left-width":"10px","left":"322px","top":"285px","width":"295px","border-top-color":"rgb(254, 255, 253)","border-right-color":"rgb(254, 255, 253)","border-bottom-color":"rgb(254, 255, 253)","border-left-color":"rgb(254, 255, 253)","min-height":"225px"},"silex-id-1424710230648":{"background-color":"rgb(254, 255, 253)","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","left":"0px","top":"174px","width":"960px","border-top-left-radius":"5px","border-top-right-radius":"5px","border-bottom-right-radius":"0px","border-bottom-left-radius":"0px","min-height":"30px"},"silex-id-1424710433398":{"background-color":"rgb(255, 255, 255)","left":"239px","top":"0px","width":"121px","min-height":"30px"},"silex-id-1424710332527":{"left":"8px","top":"0px","width":"106px","min-height":"30px"},"silex-id-1426536866650":{"background-color":"transparent","left":"365px","top":"0px","width":"121px","min-height":"30px"},"silex-id-1434425184890-0":{"left":"8px","top":"0px","width":"106px","min-height":"30px"},"silex-id-1434634286306-0":{"background-color":"transparent","left":"492px","top":"0px","width":"121px","min-height":"30px"},"silex-id-1434634286307-1":{"left":"8px","top":"0px","width":"106px","min-height":"30px"},"silex-id-1434634331833-2":{"background-color":"transparent","left":"619px","top":"0px","width":"121px","min-height":"30px"},"silex-id-1434634331834-3":{"left":"8px","top":"0px","width":"106px","min-height":"30px"},"silex-id-1425063986632":{"left":"50px","top":"44px","width":"841px","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","min-height":"20px"},"silex-id-1424921460631":{"left":"0px","top":"539px","width":"188px","background-color":"rgb(254, 255, 253)","border-top-width":"10px","border-right-width":"10px","border-bottom-width":"10px","border-left-width":"10px","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-color":"rgb(254, 255, 253)","border-right-color":"rgb(254, 255, 253)","border-bottom-color":"rgb(254, 255, 253)","border-left-color":"rgb(254, 255, 253)","min-height":"190px"},"silex-id-1434426151026-1":{"width":"740px","top":"539px","left":"198px","background-color":"rgb(254, 255, 253)","border-top-width":"10px","border-right-width":"10px","border-bottom-width":"10px","border-left-width":"10px","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-color":"rgb(254, 255, 253)","border-right-color":"rgb(254, 255, 253)","border-bottom-color":"rgb(254, 255, 253)","border-left-color":"rgb(254, 255, 253)","min-height":"190px"},"silex-id-1425063401661":{"background-color":"rgb(254, 255, 253)","background-image":"url('../../../../../../../libs/templates/silex-templates/food-and-drink/assets/people.jpeg')","background-size":"cover","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-width":"10px","border-right-width":"10px","border-bottom-width":"10px","border-left-width":"10px","left":"0px","top":"33px","width":"295px","border-top-color":"rgb(254, 255, 253)","border-right-color":"rgb(254, 255, 253)","border-bottom-color":"rgb(254, 255, 253)","border-left-color":"rgb(254, 255, 253)","background-position-x":"50%","background-position-y":"50%","min-height":"477px"},"silex-id-1434426485636-2":{"left":"1px","top":"23px","width":"188px","background-color":"rgb(254, 255, 253)","border-top-width":"10px","border-right-width":"10px","border-bottom-width":"10px","border-left-width":"10px","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-color":"rgb(254, 255, 253)","border-right-color":"rgb(254, 255, 253)","border-bottom-color":"rgb(254, 255, 253)","border-left-color":"rgb(254, 255, 253)","min-height":"190px"},"silex-id-1434426485665-3":{"width":"740px","top":"23px","left":"199px","background-color":"rgb(254, 255, 253)","border-top-width":"10px","border-right-width":"10px","border-bottom-width":"10px","border-left-width":"10px","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-color":"rgb(254, 255, 253)","border-right-color":"rgb(254, 255, 253)","border-bottom-color":"rgb(254, 255, 253)","border-left-color":"rgb(254, 255, 253)","min-height":"190px"},"silex-id-1434426613625-5":{"left":"751px","top":"541px","width":"188px","background-color":"rgb(254, 255, 253)","border-top-width":"10px","border-right-width":"10px","border-bottom-width":"10px","border-left-width":"10px","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-color":"rgb(254, 255, 253)","border-right-color":"rgb(254, 255, 253)","border-bottom-color":"rgb(254, 255, 253)","border-left-color":"rgb(254, 255, 253)","min-height":"190px"},"silex-id-1434426613658-6":{"width":"740px","top":"541px","left":"2px","background-color":"rgb(254, 255, 253)","border-top-width":"10px","border-right-width":"10px","border-bottom-width":"10px","border-left-width":"10px","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-color":"rgb(254, 255, 253)","border-right-color":"rgb(254, 255, 253)","border-bottom-color":"rgb(254, 255, 253)","border-left-color":"rgb(254, 255, 253)","min-height":"190px"},"silex-id-1434426787582-9":{"width":"937px","top":"256px","left":"3px","background-color":"rgb(254, 255, 253)","border-top-width":"10px","border-right-width":"10px","border-bottom-width":"10px","border-left-width":"10px","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","background-image":"url('../../../../../../../libs/templates/silex-templates/food-and-drink/assets/people.jpeg')","background-size":"cover","border-top-color":"rgb(254, 255, 253)","border-right-color":"rgb(254, 255, 253)","border-bottom-color":"rgb(254, 255, 253)","border-left-color":"rgb(254, 255, 253)","background-position-x":"50%","background-position-y":"50%","min-height":"244px"},"silex-id-1471343044963-3":{"width":"959px","top":"35px","left":"-10px","background-color":"rgb(254, 255, 253)","border-top-width":"10px","border-right-width":"10px","border-bottom-width":"10px","border-left-width":"10px","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-color":"rgb(254, 255, 253)","border-right-color":"rgb(254, 255, 253)","border-bottom-color":"rgb(254, 255, 253)","border-left-color":"rgb(254, 255, 253)","min-height":"261px"},"silex-id-1484949224320-0":{"min-height":"235px","background-color":"transparent"},"silex-id-1484949224320-1":{"min-height":"100px","top":"0px","left":"0px","background-color":"transparent"},"silex-id-1484949434473-2":{"min-height":"100px","background-color":"transparent"},"silex-id-1484949434473-3":{"min-height":"100px","top":"1354px","left":"0px"},"silex-id-1484949486465-4":{"min-height":"798px","background-color":"transparent"},"silex-id-1484949486466-5":{"min-height":"100px","top":"1354px","left":"0px","background-color":"transparent"},"silex-id-1484949640479-6":{"min-height":"813px","background-color":"transparent"},"silex-id-1484949640479-7":{"min-height":"100px","top":"235px","left":"0px","background-color":"transparent"},"silex-id-1484949717486-8":{"min-height":"345px","background-color":"transparent"},"silex-id-1484949717487-9":{"min-height":"100px","top":"1354px","left":"0px"}},"mobile":{"silex-id-1434426485636-2":{"width":"450px","min-height":"170px"},"silex-id-1434426485665-3":{"width":"707px"},"silex-id-1424920356950":{"width":"450px","min-height":"338px"},"silex-id-1425063611139":{"width":"450px","background-image":"url('../../../../../../../libs/templates/silex-templates/food-and-drink/assets/cafe.jpg')"},"silex-id-1425063529504":{"width":"450px","background-image":"url('../../../../../../../libs/templates/silex-templates/food-and-drink/assets/cafe2.jpg')"},"silex-id-1434426151026-1":{"width":"450px"},"silex-id-1424921460631":{"min-height":"100px","width":"450px"},"silex-id-1434426613625-5":{"width":"450px"},"silex-id-1471343044963-3":{"min-height":"270px","top":"28px","left":"1px","width":"423px"}},"componentData":{}}]
+        [{"desktop":{"silex-id-1439572548860-10":{"cursor":"auto","left":"0px","top":"0px","background-color":"rgb(255, 255, 255)"},"silex-id-1439572548754-9":{"top":"5px","left":"163px","width":"1100px","box-sizing":"content-box","background-color":"transparent","min-height":"677px"},"silex-id-1439572548653-8":{"width":"235px","top":"80px","left":"558px","box-sizing":"content-box","min-height":"24px"},"silex-id-1439572548552-7":{"width":"796px","top":"100px","left":"0px","box-sizing":"content-box","background-image":"url('http://preprod.silex.me/api/1.0/github/exec/get/silex-templates/wip/perso1/assets/richard3.jpg')","background-color":"rgb(0, 0, 0)","background-size":"auto","background-position-x":"100%","background-position-y":"100%","background-repeat-x":"no-repeat","background-repeat-y":"no-repeat","min-height":"500px"},"silex-id-1439572548447-6":{"width":"268px","top":"353px","left":"18px","box-sizing":"content-box","min-height":"58px"},"silex-id-1439572548345-5":{"width":"205px","top":"330px","left":"30px","box-sizing":"content-box","min-height":"37px"},"silex-id-1439572548242-4":{"width":"356px","top":"54px","left":"30px","box-sizing":"content-box","min-height":"238px"},"silex-id-1439572548141-3":{"width":"188px","top":"0px","left":"30px","box-sizing":"content-box","border-top-left-radius":"0px","border-top-right-radius":"0px","border-bottom-right-radius":"8px","border-bottom-left-radius":"8px","background-color":"rgb(255, 255, 255)","min-height":"25px"},"silex-id-1439572548039-2":{"width":"800px","top":"600px","left":"0px","box-sizing":"content-box","min-height":"26px"},"silex-id-1439572547935-1":{"width":"747px","top":"614px","left":"2px","box-sizing":"content-box","min-height":"30px"},"silex-id-1439572547830-0":{"width":"437px","top":"56px","left":"30px","box-sizing":"content-box","min-height":"40px"}},"mobile":{"silex-id-1439572548552-7":{"top":"0px","left":"11px","width":"423px","min-height":"786px"},"silex-id-1439572548242-4":{"top":"9px","left":"62px","width":"300px","min-height":"651px"}},"componentData":{}}]
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.2" data-silex-viewport="">
 
@@ -646,133 +212,79 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <style id="current-page-style">
-        .page-home {
+        .page-page-1 {
             display: inherit;
         }
     </style>
     <!-- Silex HEAD tag do not remove -->
+    <link href="animate.min.css" rel="stylesheet">
     <!-- End of Silex HEAD tag do not remove -->
 </head>
 
-<body data-silex-id="body-initial" class="body-initial editable-plugin-created enable-mobile silex-runtime" data-silex-type="container">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<body data-silex-type="container" class="silex-id-1439572548860-10 enable-mobile silex-runtime" data-silex-id="silex-id-1439572548860-10" style="">
+
+
+
+
+    <div class="background editable-style container-element prevent-draggable silex-id-1439572548754-9" data-silex-type="container" data-silex-id="silex-id-1439572548754-9" style="">
+        <div data-silex-type="text" class="editable-style text-element page-page-1 paged-element silex-id-1439572548653-8 hide-on-mobile" data-silex-id="silex-id-1439572548653-8">
+            <div class="silex-element-content normal">
+                <div style="text-align: right;">
+                    <font size="2">A personal page page template</font>
+                </div>
+            </div>
+        </div>
+        <div data-silex-type="container" class="editable-style container-element page-page-1 paged-element animated fadeInLeft silex-id-1439572548552-7" data-silex-id="silex-id-1439572548552-7">
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1439572548242-4" data-silex-id="silex-id-1439572548242-4">
+                <div class="silex-element-content normal">
+                    <h2>
+                        <font class="heading2" color="#ffffff">Welcome<br></font><span style="font-size: 20px; font-weight: normal; line-height: 0px; color: rgb(255, 255, 255);">To my personal page</span></h2>
+                    <div>
+                        <font class="normal" color="#ffffff">
+                            <p class="normal">Non aliquip shank turkey, irure jowl sunt ipsum consequat. Pork chop spare ribs flank aute, in ea hamburger pariatur nostrud cupim. Id pariatur venison prosciutto alcatra, deserunt esse ut meatloaf ullamco swine tenderloin.&nbsp;
+                            </p>
+                            <p class="normal">Picanha minim in mollit, tongue strip steak in rump velit kevin andouille. Exercitation beef ribs anim velit short ribs. Drumstick ut excepteur cupidatat velit ball tip andouille leberkas porchetta occaecat corned beef bresaola
+                                t-bone minim ut.&nbsp;
+                            </p>
+                        </font>
+                    </div>
+                </div>
+            </div>
+            <div data-silex-type="image" class="editable-style image-element silex-id-1439572548447-6" data-silex-id="silex-id-1439572548447-6"><img src="../../../../../../../libs/templates/silex-templates/perso1/assets/plus-icon-set.jpg" class="silex-element-content">
+            </div>
+            <div data-silex-type="text" class="editable-style text-element animated fadeIn silex-id-1439572548141-3" data-silex-id="silex-id-1439572548141-3">
+                <div class="silex-element-content normal">
+                    <h1 class="heading1" style="text-align: center;">software freedom activist</h1>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1439572548345-5 hide-on-mobile" data-silex-id="silex-id-1439572548345-5">
+                <div class="silex-element-content normal">
+                    <h3 class="heading3">
+                        <font color="#ffffff">Follow Me Further</font>
+                    </h3>
+                    <div>
+                        <font color="#ffffff"><br></font>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div data-silex-type="image" class="editable-style image-element page-page-1 paged-element animated fadeInLeft silex-id-1439572548039-2" data-silex-id="silex-id-1439572548039-2"><img src="../../../../../../../libs/templates/silex-templates/perso1/assets/shadow.jpg" class="silex-element-content">
+        </div>
+        <div data-silex-type="text" class="editable-style text-element page-page-1 paged-element animated fadeInDown silex-id-1439572547830-0" data-silex-id="silex-id-1439572547830-0">
+            <div class="silex-element-content normal">
+                <header class="title">Richard S.</header>
+            </div>
+        </div>
+        <div data-silex-type="text" class="editable-style text-element page-page-1 paged-element silex-id-1439572547935-1" data-silex-id="silex-id-1439572547935-1">
+            <div class="silex-element-content normal">Copyleft DWTFYW - <a href="http://www.silex.me">powered by Silex</a>
+            </div>
+        </div>
+
+    </div>
 
 
 
@@ -781,11 +293,8 @@
 
 
     <div class="silex-pages">
-        <div data-silex-type="image" data-silex-id="silex-id-hamburger-menu" class="menu-button editable-style silex-id-hamburger-menu image-element page-page-1 paged-element prevent-draggable prevent-resizable"><img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII="
-                class="silex-element-content"></div>
+        <a id="page-page-1" data-silex-type="page" class="page-element page-link-active">Page 1</a></div>
 
-        <a id="page-home" data-silex-type="page" class="page-element page-link-active">Home</a><a id="page-menu" data-silex-type="page" class="page-element">Menu</a><a class="page-element" data-silex-type="page" id="page-team">Team</a><a class="page-element"
-            data-silex-type="page" id="page-info">Info</a></div>
 
 
 
@@ -793,189 +302,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484949224320-1 section-element" data-silex-id="silex-id-1484949224320-1">
-        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484949224320-0 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484949224320-0">
-            <div data-silex-type="text" class="editable-style text-element silex-id-1424647173853" data-silex-id="silex-id-1424647173853">
-                <div class="silex-element-content normal">
-                    <header class="title" style="text-align: center;">Food &amp; Drinks</header>
-                </div>
-            </div>
-            <div data-silex-type="image" class="editable-style image-element silex-id-1424647165395" data-silex-id="silex-id-1424647165395"><img src="../../../../../../../libs/templates/silex-templates/food-and-drink/assets/post%20divider_scroll.png" class="silex-element-content">
-            </div>
-            <div data-silex-type="container" class="editable-style silex-id-1424710230648 container-element hide-on-mobile" data-silex-id="silex-id-1424710230648">
-                <div data-silex-type="container" class="editable-style   container-element silex-id-1424710433398 editable-plugin-created" data-silex-id="silex-id-1424710433398">
-                    <div data-silex-type="text" class="editable-style  text-element silex-id-1424710332527 nav-element page-link-active" data-silex-id="silex-id-1424710332527" data-silex-href="#!page-home">
-                        <div class="silex-element-content normal">
-                            <div style="text-align: center;">HOME</div>
-                        </div>
-                    </div>
-                </div>
-                <div data-silex-type="container" class="editable-style silex-id-1426536866650 editable-plugin-created container-element" data-silex-id="silex-id-1426536866650">
-                    <div data-silex-type="text" class="editable-style  text-element nav-element silex-id-1434425184890-0" data-silex-id="silex-id-1434425184890-0" data-silex-href="#!page-menu">
-                        <div class="silex-element-content normal">
-                            <div style="text-align: center;">MENU</div>
-                        </div>
-                    </div>
-                </div>
-                <div data-silex-type="container" class="editable-style editable-plugin-created container-element silex-id-1434634286306-0" data-silex-id="silex-id-1434634286306-0">
-
-                    <div data-silex-type="text" class="editable-style  text-element nav-element silex-id-1434634286307-1" data-silex-id="silex-id-1434634286307-1" data-silex-href="#!page-team">
-                        <div class="silex-element-content normal">
-                            <div style="text-align: center;">TEAM</div>
-                        </div>
-                    </div>
-                </div>
-                <div data-silex-type="container" class="editable-style editable-plugin-created container-element silex-id-1434634331833-2" data-silex-id="silex-id-1434634331833-2">
-
-                    <div data-silex-type="text" class="editable-style  text-element nav-element silex-id-1434634331834-3" data-silex-id="silex-id-1434634331834-3" data-silex-href="#!page-info">
-                        <div class="silex-element-content normal">
-                            <div style="text-align: center;">INFO</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484949486466-5 section-element page-home paged-element" data-silex-id="silex-id-1484949486466-5">
-        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484949486465-4 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484949486465-4">
-            <div data-silex-type="text" class="editable-style text-element silex-id-1424920356950 paragraph" data-silex-id="silex-id-1424920356950">
-                <div class="silex-element-content normal">
-                    <h1 class="heading1">Le service à la Française</h1>
-                    <div>
-                        <p class="normal">Commodo ad ut, picanha ex eiusmod nulla ground round occaecat. Rump fatback sint tail nulla corned beef short loin, picanha commodo strip steak est shank meatball excepteur. Proident mollit do ullamco. Meatloaf culpa ham hock short
-                            ribs chuck filet mignon spare ribs landjaeger kielbasa et. Ullamco porchetta short ribs, meatloaf venison pork belly do shank flank esse tri-tip nostrud. Aliqua esse minim bacon eu nulla fatback pariatur kielbasa pork chop
-                            voluptate adipisicing nisi ribeye. Reprehenderit kielbasa shankle short loin est et filet mignon shank meatball pig.</p>
-                    </div>
-                </div>
-            </div>
-            <div data-silex-type="container" class="editable-style silex-id-1425063529504 container-element" data-silex-id="silex-id-1425063529504"></div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1424921460631 paragraph" data-silex-id="silex-id-1424921460631">
-                <div class="silex-element-content normal">
-                    <h1 class="heading1">Friendly atmosphere&nbsp;</h1>
-                    <h1 class="heading1">With real people</h1>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style silex-id-1434426151026-1 text-element paragraph" data-silex-id="silex-id-1434426151026-1">
-                <div class="silex-element-content normal">
-                    <p class="normal">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                        accusam et justo duo dolores et ea rebum.&nbsp;</p>
-                </div>
-            </div>
-            <div data-silex-type="container" class="editable-style silex-id-1425063611139 container-element" data-silex-id="silex-id-1425063611139"></div>
-            <div data-silex-type="container" class="editable-style silex-id-1425063401661 container-element hide-on-mobile" data-silex-id="silex-id-1425063401661"></div>
-        </div>
-    </div>
-
-
-
-
-
-    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484949640479-7 section-element page-menu paged-element" data-silex-id="silex-id-1484949640479-7">
-        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484949640479-6 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484949640479-6">
-            <div data-silex-type="text" class="editable-style text-element paragraph silex-id-1434426485636-2" data-silex-id="silex-id-1434426485636-2">
-                <div class="silex-element-content normal">
-                    <h1 class="heading1"><br></h1>
-                    <h1 class="heading1">A Friendly Atmosphere&nbsp;</h1>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element paragraph silex-id-1434426485665-3" data-silex-id="silex-id-1434426485665-3">
-                <div class="silex-element-content normal">
-                    <p class="normal">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&nbsp;</p>
-                </div>
-            </div>
-            <div data-silex-type="container" class="editable-style silex-id-1434426787582-9 container-element" data-silex-id="silex-id-1434426787582-9"></div>
-            <div data-silex-type="text" class="editable-style text-element paragraph silex-id-1434426613625-5" data-silex-id="silex-id-1434426613625-5">
-                <div class="silex-element-content normal">
-                    <h1 class="heading1"><br></h1>
-                    <h1 class="heading1">With Real <br>People</h1>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element paragraph silex-id-1434426613658-6" data-silex-id="silex-id-1434426613658-6">
-                <div class="silex-element-content normal">
-                    <p class="normal">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&nbsp;</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484949717487-9 section-element page-team paged-element page-info" data-silex-id="silex-id-1484949717487-9">
-        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484949717486-8 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484949717486-8">
-            <div data-silex-type="text" class="editable-style text-element paragraph silex-id-1471343044963-3" data-silex-id="silex-id-1471343044963-3">
-                <div class="silex-element-content normal">
-                    <p class="normal" style="text-align: center;">
-                        <br>
-                    </p>
-                    <p class="normal" style="text-align: center;">Nothing here yet. Waiting for your content...</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484949434473-3 section-element" data-silex-id="silex-id-1484949434473-3">
-        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484949434473-2 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484949434473-2">
-            <div data-silex-type="text" class="editable-style silex-id-1425063986632 text-element" data-silex-id="silex-id-1425063986632">
-                <div class="silex-element-content normal">
-                    <div style="text-align: center;"><span style="background-color: rgb(243, 243, 243);"><a href="http://www.silex.me/">Powered by Silex</a>&nbsp;<a href="http://www.silex.me/">website builder</a> -&nbsp;<a href="http://www.wix.com/demone2/city-bakery">Inspired by this template</a>&nbsp;- <a href="https://unsplash.com/">Photos from here</a>&nbsp;-
-                    <a href="http://www.colorcombos.com/color-schemes/253/ColorCombo253.html">Color palete</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
