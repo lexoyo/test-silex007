@@ -16,13 +16,13 @@
 
     <style type="text/css" class="silex-style"></style>
     <script type="text/javascript" class="silex-script">
-        setTimeout(function() {
-          $('body').on('pageChanged', function (event, pageName) {
+        $('body').on('pageChanged', function (event, pageName) {
               console.log('changed', pageName)
               if(pageName === 'page-page-2')
+              setTimeout(function() {
                 window.location.href = "#!page-page-1";
+              }, 2000);
           });
-        }, 2000);
     </script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
