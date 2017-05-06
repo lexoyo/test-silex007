@@ -17,7 +17,10 @@
     <style type="text/css" class="silex-style"></style>
     <script type="text/javascript" class="silex-script">
         setTimeout(function() {
-          window.location.href = "#!page-page-1";
+          $('body').on('pageChanged', function (event, pageName) {
+              if(pageName === 'page-2')
+                window.location.href = "#!page-page-1";
+          });
         }, 2000);
     </script>
     <style class="silex-inline-styles" type="text/css">
