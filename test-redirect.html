@@ -22,6 +22,9 @@
               // here a page has changed
               checkRedir(pageName);
           });
+          // check at start
+          var current = $('body').pageable('option').currentPage;
+          checkRedir(current);
         });
         function checkRedir(pageName) {
           console.log('check', pageName)
