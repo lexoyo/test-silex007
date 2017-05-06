@@ -20,11 +20,11 @@
           // here the page is loaded
           $('body').on('pageChanged', function (event, pageName) {
               // here a page has changed
-              console.log('changed', pageName)
               checkRedir(pageName);
           });
         });
         function checkRedir(pageName) {
+          console.log('check', pageName)
           if(pageName === 'page-page-2')
           setTimeout(function() {
             window.location.href = "#!page-page-1";
