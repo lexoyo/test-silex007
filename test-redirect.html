@@ -18,6 +18,7 @@
     <script type="text/javascript" class="silex-script">
         setTimeout(function() {
           $('body').on('pageChanged', function (event, pageName) {
+              console.log('changed', pageName)
               if(pageName === 'page-2')
                 window.location.href = "#!page-page-1";
           });
