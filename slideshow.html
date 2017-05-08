@@ -52,7 +52,7 @@
     </style>
     <title></title>
     <script type="text/javascript" class="silex-json-styles">
-        [{"desktop":{"body-initial":{"background-color":"rgba(255,255,255,1)"},"silex-id-1474394621032-2":{"min-height":"600px","background-color":"transparent","width":"1200px"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"53px","width":"349px","top":"29px","left":"430px"},"silex-id-1478366444112-0":{"min-height":"622px","background-color":"rgba(200,255,227,1)","width":"1200px","top":"15px","left":"205px"},"silex-id-1478366444112-1":{"top":"100px","left":"NaNpx","background-color":"transparent","min-width":"1200px"},"silex-id-1478366450713-2":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1494254105047-0":{"height":"464px","width":"745px","background-color":"rgba(200,182,255,1)","top":"78px","left":"214px"}},"mobile":{},"componentData":{"silex-id-1494254105047-0":{"name":"slideshow1","templateName":"slideshow","slides":[{"image":[{"url":"/api/1.0/github/exec/get/test-silex007/gh-pages/assets/pic09.jpg","name":"pic09.jpg","size":25184}],"text":"aaaaaaaaaaaa"},{"image":[{"url":"/api/1.0/github/exec/get//test-silex007/gh-pages/assets/pic07.jpg","name":"pic07.jpg","size":38187}]}]}}}]
+        [{"desktop":{"body-initial":{"background-color":"rgba(255,255,255,1)"},"silex-id-1474394621032-2":{"min-height":"600px","background-color":"transparent","width":"1200px"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"53px","width":"349px","top":"29px","left":"430px"},"silex-id-1478366444112-0":{"min-height":"622px","background-color":"rgba(200,255,227,1)","width":"1200px","top":"15px","left":"205px"},"silex-id-1478366444112-1":{"top":"100px","left":"NaNpx","background-color":"transparent","min-width":"1200px"},"silex-id-1478366450713-2":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1494254105047-0":{"height":"464px","width":"745px","background-color":"rgba(200,182,255,1)","top":"78px","left":"214px"}},"mobile":{},"componentData":{"silex-id-1494254105047-0":{"name":"slideshow1","templateName":"slideshow","slides":[{"image":[{"url":"/api/1.0/github/exec/get/test-silex007/gh-pages/assets/pic09.jpg","name":"pic09.jpg","size":25184}],"text":"aaaaaaaaaaaa","link":"#test1"},{"image":[{"url":"/api/1.0/github/exec/get//test-silex007/gh-pages/assets/pic07.jpg","name":"pic07.jpg","size":38187}],"link":"#test2"}]}}}]
     </script>
 
 
@@ -106,7 +106,7 @@
         <div data-silex-type="container" class="editable-style silex-element-content silex-id-1478366444112-0 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1478366444112-0">
             <div data-silex-type="html" class="editable-style silex-id-1494254105047-0 html-element silex-component silex-component-slideshow silex-use-height-not-minheight" data-silex-id="silex-id-1494254105047-0" style="">
                 <div class="silex-element-content">
-                    <div id="parent_1494254224096_529">
+                    <div id="parent_1494254253945_885">
                         <!-- preview -->
                         <div class="prodotype-preview">
 
@@ -122,7 +122,7 @@
                             </figure>
 
                         </div>
-                        <div id="id_1494254224096_529">
+                        <div id="id_1494254253945_885">
                             <!-- runtime -->
                             <!-- the whole slideshow -->
                             <ul class="prodotype-runtime">
@@ -130,11 +130,15 @@
                                 <li>
                                     <figure class="slide-0">
 
-                                        <div class="slide-image">
+                                        <a href="#test1">
 
-                                            <figcaption>aaaaaaaaaaaa</figcaption>
+                                            <div class="slide-image">
 
-                                        </div>
+                                                <figcaption>aaaaaaaaaaaa</figcaption>
+
+                                            </div>
+
+                                        </a>
 
                                     </figure>
                                 </li>
@@ -142,9 +146,13 @@
                                 <li>
                                     <figure class="slide-1">
 
-                                        <div class="slide-image">
+                                        <a href="#test2">
 
-                                        </div>
+                                            <div class="slide-image">
+
+                                            </div>
+
+                                        </a>
 
                                     </figure>
                                 </li>
@@ -156,19 +164,19 @@
                         /* *********************** */
                         /* "Preview" label always on top of the slideshow in silex */
                         
-                        #parent_1494254224096_529 .prodotype-preview {
+                        #parent_1494254253945_885 .prodotype-preview {
                             list-style-type: none;
                             margin: 0;
                             padding: 0;
                         }
                         
-                        #parent_1494254224096_529 .prodotype-preview .preview-text {
+                        #parent_1494254253945_885 .prodotype-preview .preview-text {
                             display: flex;
                             align-items: center;
                             justify-content: center;
                         }
                         
-                        #parent_1494254224096_529 .prodotype-preview .preview-text p {
+                        #parent_1494254253945_885 .prodotype-preview .preview-text p {
                             z-index: 1;
                             background-color: black;
                             color: white;
@@ -176,14 +184,14 @@
                         /* *********************** */
                         /* styles for each slide */
                         
-                        #parent_1494254224096_529 .slide-0 .slide-image {
+                        #parent_1494254253945_885 .slide-0 .slide-image {
                             background-image: url('assets/pic09.jpg');
                             background-repeat: no-repeat;
                             background-size: cover;
                             background-position: 50%;
                         }
                         
-                        #parent_1494254224096_529 .slide-1 .slide-image {
+                        #parent_1494254253945_885 .slide-1 .slide-image {
                             background-image: url('assets/pic07.jpg');
                             background-repeat: no-repeat;
                             background-size: cover;
@@ -192,7 +200,7 @@
                         /* *********************** */
                         /* styles for all the slides */
                         
-                        #parent_1494254224096_529 .slide-image {
+                        #parent_1494254253945_885 .slide-image {
                             width: 100%;
                             display: flex;
                             justify-content: center;
@@ -200,7 +208,7 @@
                             justify-content: center;
                         }
                         
-                        #parent_1494254224096_529 figcaption {
+                        #parent_1494254253945_885 figcaption {
                             padding: 50px;
                             color: white;
                             background-color: rgba(0, 0, 0, 0.5);
@@ -210,7 +218,7 @@
                         /* *********************** */
                         /* UI style */
                         
-                        #parent_1494254224096_529 .unslider-nav {
+                        #parent_1494254253945_885 .unslider-nav {
                             position: absolute;
                             bottom: 10px;
                             left: 0;
@@ -219,17 +227,17 @@
                             margin: 0;
                         }
                         
-                        #parent_1494254224096_529 .unslider-nav ol {
+                        #parent_1494254253945_885 .unslider-nav ol {
                             text-align: center;
                         }
                         
-                        #parent_1494254224096_529 .unslider-nav ol li.unslider-active {
+                        #parent_1494254253945_885 .unslider-nav ol li.unslider-active {
                             background: #fff;
                             cursor: default;
                             opacity: 1;
                         }
                         
-                        #parent_1494254224096_529 .unslider-nav ol li {
+                        #parent_1494254253945_885 .unslider-nav ol li {
                             display: inline-block;
                             float: none;
                             width: 6px;
@@ -245,7 +253,7 @@
                             opacity: .4;
                         }
                         
-                        #parent_1494254224096_529 .unslider-arrow {
+                        #parent_1494254253945_885 .unslider-arrow {
                             display: block;
                             width: 32px;
                             height: 32px;
@@ -263,7 +271,7 @@
                             transition: opacity .2s;
                         }
                         
-                        #parent_1494254224096_529 .unslider-arrow.prev {
+                        #parent_1494254253945_885 .unslider-arrow.prev {
                             left: 16px;
                             right: auto;
                             -ms-transform: rotate(-180deg);
@@ -277,7 +285,7 @@
                               // do not start in the editor (it would mess with the markup)
                               if(!$('body').hasClass('silex-runtime')) return;
                         
-                              var slider = $('#id_1494254224096_529').unslider({
+                              var slider = $('#id_1494254253945_885').unslider({
                                 'autoplay': false,
                                 'speed': 750,
                                 'delay': 3000,
@@ -289,10 +297,10 @@
                               //  Listen to slide changes
                               
                               // apply element height to the images
-                              var silexElement = $('#id_1494254224096_529').closest('.editable-style');
+                              var silexElement = $('#id_1494254253945_885').closest('.editable-style');
                               var elementMinHeight = silexElement.css('height');
                               var elementWidth = silexElement.css('width');
-                              $('#id_1494254224096_529 li .slide-image').css({
+                              $('#id_1494254253945_885 li .slide-image').css({
                                 'height': elementMinHeight
                               });
                               
